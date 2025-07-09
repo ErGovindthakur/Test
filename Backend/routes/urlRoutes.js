@@ -3,7 +3,7 @@ import { createShortUrl, redirectToOriginalUrl } from "../controllers/urlControl
 
 const router = express.Router();
 
-router.post("/shorten",createShortUrl);
+router.post("/shortenUrl",createShortUrl);
 router.get("/:shortId",redirectToOriginalUrl)
 
 export default router

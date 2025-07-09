@@ -7,7 +7,7 @@ export const createShortUrl = async (req, res, nex) => {
 
   try {
     const shortId = nanoid(6);
-    const newUrl = new urlModels({ originalUrl, newUrl });
+    const newUrl = new urlModels({ originalUrl, shortId });
 
     await newUrl.save();
 
@@ -24,7 +24,7 @@ export const createShortUrl = async (req, res, nex) => {
 
 export const redirectToOriginalUrl = async(req,res) => {
      const {shortId} = req.params;
-     const found = new urlModels.findOne({shortId});
+     const found = await urlModels.findOne({shortId});
 
      if(found){
           res.redirect(found.originalUrl);
