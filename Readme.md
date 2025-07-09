@@ -29,4 +29,16 @@ git remote -v
 
 git checkout main
 git pull origin master --allow-unrelated-histories
+
+## when you will not be able to merge with remote branch do it
+git fetch origin
+git branch -a
+git add .
+git commit -m "solve git issues"
+git checkout -b main origin/main
+git merge master
+git merge master --allow-unrelated-histories
+git push origin main
+
+## Now Job Done
 ```
