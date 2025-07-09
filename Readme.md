@@ -19,3 +19,10 @@ npm install axios (dependency to communicate with backend)
 npm run dev (run cmd)
 
 ```
+
+###### Git Essential
+
+```bash
+git remote add origin https://github.com/ErGovindthakur/Test.git
+git remote -v
+```
