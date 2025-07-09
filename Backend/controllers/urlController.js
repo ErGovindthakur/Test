@@ -1,4 +1,4 @@
-import urlModels from "../models/url.models";
+import urlModels from "../models/url.models.js";
 
 import { nanoid } from "nanoid";
 
