@@ -6,7 +6,8 @@
 cd Backend
 npm init -y (To set package.json file)
 npm install express mongoose dotenv cors nanoid (dependencies)
-node server.js (run cmd)
+node server.js (run cmd for production)
+npm run dev (run cmd for development)
 
 ```
 
@@ -40,5 +41,5 @@ git merge master
 git merge master --allow-unrelated-histories
 git push origin main
 
-## Now Job Done
+## Now Job
 ```
