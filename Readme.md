@@ -25,4 +25,8 @@ npm run dev (run cmd)
 ```bash
 git remote add origin https://github.com/ErGovindthakur/Test.git
 git remote -v
+
+
+git checkout main
+git pull origin master --allow-unrelated-histories
 ```
