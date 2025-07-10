@@ -6,9 +6,14 @@ export const createShortUrl = async (req, res) => {
 
   try {
     const shortId = nanoid(6);
-    const newUrl = new urlModels({ originalUrl, shortId });
-    await newUrl.save();
+    // const newUrl = new urlModels({ originalUrl, shortId });
+    // await newUrl.save();
 
+    await urlModels.create({
+      originalUrl,
+      shortId
+    })
+    
     res.status(201).json({
       success: true,
       message: "URL created successfully",
